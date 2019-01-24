@@ -29,8 +29,8 @@ $(document).on('click','.tag-buttons', function(event){
     $.ajax ({
         url: queryURL,
         method: "GET"
-    }).done(function(respone) {
-        for(var i = 0; i < Response.data.lenght; i++) {
+    }).done(function(Response) {
+        for(var i = 0; i < Response.data.length; i++) {
 
             $("#picture").append('<img class="gif" src="' + Response.data[i].images.fixed_height_still.url + '">');
 
