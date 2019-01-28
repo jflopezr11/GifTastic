@@ -9,5 +9,10 @@ body  {
 
 .jumbotron {
     background-image: linear-gradient(150deg, #a6c0fe 0%, #f68084 100%);
+    text-align: center;
+    border: black 8px solid;
 
+}
+.jumbotron {
+    border-radius: 5rem;
 }

@@ -8,7 +8,7 @@ var tags = ["Mordecai", "Rigby", "Regular Show", "Rick and Morty", "South Park"]
     }
 } 
 
-$(document).on('click', '#theTag', function(event) {
+$(document).on('click', '#addTag', function(event) {
     
     event.preventDefault();
 
@@ -21,6 +21,7 @@ $(document).on('click', '#theTag', function(event) {
 $(document).on('click','.tag-buttons', function(event){
 
     event.preventDefault();
+    $("#picture").empty();
 
     var type = this.innerText;
     console.log(this.innerText);
@@ -37,7 +38,7 @@ $(document).on('click','.tag-buttons', function(event){
         }
     });
 
-    $("picture").empty();
+   
 
 });
 
